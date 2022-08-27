@@ -1,0 +1,95 @@
+@use 'variables' as a;
+
+.card {
+  max-width: 108rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border-radius: 2rem;
+  background: a.$color-bg-card;
+  &__details {
+    padding: 6rem;
+    display: grid;
+    gap: 2rem;
+    align-items: center;
+  }
+  &__title {
+    font-size: a.$fs-main;
+    &--accent {
+      color:a.$color-main;
+    }
+  }
+  &__content {
+    font-size: a.$fs-sub;
+    color: rgba(a.$color-sub, 0.75)
+  }
+  &__stat {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  &__stat-details {
+    list-style: none;
+  }
+  &__stat-number {
+    font-size: a.$fs-main;
+  }
+  &__stat-des {
+    font-size: a.$fs-sub;
+    text-transform: uppercase;
+    color: rgba(a.$color-sub, 0.6)
+  }
+  &__pic {
+    position: relative;
+    height: 100%;
+    &::after {
+      position: absolute;
+      content: "";
+      inset: 0;
+      background: rgba(a.$color-main, 0.5);
+      border-top-right-radius: 2rem;
+      border-bottom-right-radius: 2rem;
+    }
+  }
+  &__img {
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .card {
+    display: flex;
+    flex-direction: column-reverse;
+    max-width: 54rem;
+    margin: 2rem;
+    &__details {
+      text-align: center;
+      padding: 4rem;
+    }
+    &__stat {
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+    &__pic {
+      &::after {
+        border-top-right-radius: 2rem;
+        border-top-left-radius: 2rem;
+      }
+    }
+    &__img {
+      border-top-right-radius: 2rem;
+      border-top-left-radius: 2rem;
+      border-bottom-right-radius: 0;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .card {
+    &__title,&__stat-number {
+      font-size: 3rem;
+    }
+    &__content, &__stat-des{
+      font-size: 1.5rem;
+    }
+  }
+}
