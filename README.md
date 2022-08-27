@@ -1,9 +1,7 @@
-# equillibrium
-Frontend Mentor - NFT preview card component
-# Frontend Mentor - NFT preview card component solution
+# brandy
+# Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [NFT preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/nft-preview-card-component-SbdUL_w0U). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
-
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 
 ## Table of contents
@@ -34,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [AudioCast - GITHUB](https://github.com/Samjolas/audiocast)
-- Live Site URL: [AudioCast - LIVE](https://samjolas.github.io/audiocast)
+- Solution URL: [Brandy - GITHUB](https://github.com/Samjolas/brandy)
+- Live Site URL: [Brandy - LIVE](https://samjolas.github.io/brandy)
 
 ## My process
 - Evaluate the design 
@@ -53,12 +51,13 @@ Users should be able to:
 - Semantic HTML5 markup
 - BEM METHODOLOGY
 - CSS (SASS)
+- Flexbox
 - CSS GRID
 - Responsive Design
 
 ### What I learned
 
-- Utilize the power of grid in creating the order details sections, I use 1fr 4fr 1fr and text-align: start to achive the exact layout 
+- The important of max width over width can still not be overemphasized, I enjoyed using it on this project 
 
 ### Continued development
 
